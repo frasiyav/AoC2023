@@ -9,5 +9,5 @@ pidx ← (⊢×·+`»⊸<)⌾⥊ num
 pnums ← •ParseFloat¨ (pidx-1) ⊔○⥊ i
 adj ← 1-˜(<·⍷·0⊸≠⊸/⥊)⎉2 3‿3↕Pad pidx
 
-•Show +´   ⊏⟜pnums         ∾  sym/○⥊adj
+•Show +´   ⊏⟜pnums        ⍷∾  sym/○⥊adj
 •Show +´×´¨⊏⟜pnums¨ (2=≠¨)⊸/ gear/○⥊adj
