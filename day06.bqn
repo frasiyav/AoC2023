@@ -1,9 +1,6 @@
 ⟨ ToNats ⟩ ← •Import "bqn-libs/strings.bqn"
 i ← •file.Lines "input06.txt"
 
-p1 ← ToNats¨ i
-p2 ← (ToNats' '⊸≠⊸/)¨ i
+F ← ×´1-˜·⌈⊸-⟜⌊´2÷˜(⊣(+≍-)·√×˜⊸-⟜(4×⊢))˝
 
-F ← ×´1+·⌈⊸-⟜⌊´2÷˜(⊣(+≍-)2-˜·√×˜⊸-⟜(4×⊢))˝
-
-•Show F¨p1‿p2
+•Show F˘ ⌽ ToNats¨ ' '⊸≠⊸/¨⊸≍ i
