@@ -7,7 +7,7 @@ i ← •file.Lines "input08.txt"
 p1 ← k⊐"AAA"‿"ZZZ"
 p2 ← /˘"AZ"=⌜2⊑¨k
 
-m ← 1↓⊐⌾⥊[k,l,r]
+m ← k⊐[l,r]
 ins "LR"⊸⊐↩
 n ← ≠ins
 
