@@ -1,14 +1,10 @@
 MDSlash ← /○⥊⟜↕⟜≢
 
-i ← •file.Lines "input11.txt"
+i ← '#'=>•file.Lines "input11.txt"
 
-m ← ".#"⊐>i
-ex ← (/·¬∨˝){𝔽∘⍉⋈𝔽}m
-g ← MDSlash m
-l ← >⌜˜↕≠g
-p ← l/○⥊(⍉≍)⌜˜g
+x ← (/·¬∨˝){𝔽∘⍉⋈𝔽}i
+g ← ⍉>MDSlash i
+d ← |∘-⌜˜˘g
+m ← x(+´1=⍋˜⟜∧)¨˘ ≍⌜˜˘g
 
-F ← {+´∾(|∘-´˘+(𝕨-1)×·(+´1=⍋)¨⟜ex <∘∧˘)¨𝕩}
-
-•Show 2 F p
-•Show 1000000 F p
+•Show {2÷˜+´⥊d+m×𝕩-1}¨2‿1000000
